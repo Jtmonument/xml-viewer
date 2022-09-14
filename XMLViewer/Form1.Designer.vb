@@ -20,13 +20,15 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.FluentDesignFormContainer1 = New DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.AccordionControl1 = New DevExpress.XtraBars.Navigation.AccordionControl()
         Me.FluentDesignFormControl1 = New DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl()
         Me.FluentFormDefaultManager1 = New DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(Me.components)
+        Me.FluentDesignFormContainer1.SuspendLayout()
         CType(Me.AccordionControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.FluentDesignFormControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.FluentFormDefaultManager1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -34,11 +36,22 @@ Partial Class Form1
         '
         'FluentDesignFormContainer1
         '
+        Me.FluentDesignFormContainer1.Controls.Add(Me.Button1)
         Me.FluentDesignFormContainer1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.FluentDesignFormContainer1.Location = New System.Drawing.Point(260, 31)
+        Me.FluentDesignFormContainer1.Location = New System.Drawing.Point(250, 31)
         Me.FluentDesignFormContainer1.Name = "FluentDesignFormContainer1"
-        Me.FluentDesignFormContainer1.Size = New System.Drawing.Size(431, 442)
+        Me.FluentDesignFormContainer1.Size = New System.Drawing.Size(441, 442)
         Me.FluentDesignFormContainer1.TabIndex = 0
+        '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button1.Location = New System.Drawing.Point(246, 181)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(126, 34)
+        Me.Button1.TabIndex = 0
+        Me.Button1.Text = "Choose XML file"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'AccordionControl1
         '
@@ -46,7 +59,7 @@ Partial Class Form1
         Me.AccordionControl1.Location = New System.Drawing.Point(0, 31)
         Me.AccordionControl1.Name = "AccordionControl1"
         Me.AccordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch
-        Me.AccordionControl1.Size = New System.Drawing.Size(260, 442)
+        Me.AccordionControl1.Size = New System.Drawing.Size(250, 442)
         Me.AccordionControl1.TabIndex = 1
         Me.AccordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu
         '
@@ -77,6 +90,7 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.NavigationControl = Me.AccordionControl1
         Me.Text = "Form1"
+        Me.FluentDesignFormContainer1.ResumeLayout(False)
         CType(Me.AccordionControl1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.FluentDesignFormControl1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.FluentFormDefaultManager1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -87,4 +101,5 @@ Partial Class Form1
     Friend WithEvents AccordionControl1 As DevExpress.XtraBars.Navigation.AccordionControl
     Friend WithEvents FluentDesignFormControl1 As DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl
     Friend WithEvents FluentFormDefaultManager1 As DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager
+    Friend WithEvents Button1 As Button
 End Class
