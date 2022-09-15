@@ -38,9 +38,9 @@ Partial Class Form1
         '
         Me.FluentDesignFormContainer1.Controls.Add(Me.Button1)
         Me.FluentDesignFormContainer1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.FluentDesignFormContainer1.Location = New System.Drawing.Point(250, 31)
+        Me.FluentDesignFormContainer1.Location = New System.Drawing.Point(48, 31)
         Me.FluentDesignFormContainer1.Name = "FluentDesignFormContainer1"
-        Me.FluentDesignFormContainer1.Size = New System.Drawing.Size(441, 442)
+        Me.FluentDesignFormContainer1.Size = New System.Drawing.Size(643, 442)
         Me.FluentDesignFormContainer1.TabIndex = 0
         '
         'Button1
@@ -58,8 +58,9 @@ Partial Class Form1
         Me.AccordionControl1.Dock = System.Windows.Forms.DockStyle.Left
         Me.AccordionControl1.Location = New System.Drawing.Point(0, 31)
         Me.AccordionControl1.Name = "AccordionControl1"
+        Me.AccordionControl1.OptionsMinimizing.State = DevExpress.XtraBars.Navigation.AccordionControlState.Minimized
         Me.AccordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch
-        Me.AccordionControl1.Size = New System.Drawing.Size(250, 442)
+        Me.AccordionControl1.Size = New System.Drawing.Size(48, 442)
         Me.AccordionControl1.TabIndex = 1
         Me.AccordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu
         '
