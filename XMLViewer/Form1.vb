@@ -73,7 +73,7 @@ Public Class Form1
             If Element.Node.Attributes IsNot Nothing AndAlso Element.Node.Attributes.Count() > 0 Then
                 For Each Attribute As XmlAttribute In Element.Node.Attributes()
                     Dim Contents As New Label()
-                    Contents.Text = Attribute.InnerText
+                    Contents.Text = String.Format("{0}", Attribute.Name, Attribute.InnerText)
                     Me.FluentDesignFormContainer1.Controls.Clear()
                     Me.FluentDesignFormContainer1.Controls.Add(Contents)
                 Next
