@@ -111,9 +111,9 @@ Public Class Form1
                     Contents.Font = LabelFont
                     Contents.Location = New Point((Me.FluentDesignFormContainer1.Width - Contents.Width) / 2, Line)
                     If Child.FirstChild IsNot Nothing AndAlso Child.FirstChild.Name = "#text" Then
-                        Contents.Text = Child.FirstChild.InnerText
+                        Contents.Text = Child.Name & ": " & Child.FirstChild.InnerText
                     Else
-                        Contents.Text = Child.InnerText
+                        Contents.Text = Child.Name & ": " & Child.InnerText
                     End If
                     Me.FluentDesignFormContainer1.Controls.Add(Contents)
                     Line += 25
@@ -130,7 +130,7 @@ Public Class Form1
                     Dim Y = Me.FluentDesignFormContainer1.Height / 2 + Line
                     Contents.Font = LabelFont
                     Contents.Location = New Point(X, Y)
-                    Contents.Text = Child.FirstChild.InnerText
+                    Contents.Text = Child.Name & ": " & Child.FirstChild.InnerText
                     Me.FluentDesignFormContainer1.Controls.Add(Contents)
                     Line += 25
                 End If
@@ -147,7 +147,7 @@ Public Class Form1
                     Dim Y = Me.FluentDesignFormContainer1.Height / 2 + Line
                     Contents.Font = LabelFont
                     Contents.Location = New Point(X, Y)
-                    Contents.Text = Attribute.InnerText
+                    Contents.Text = Attribute.Name & ": " & Attribute.InnerText
                     Me.FluentDesignFormContainer1.Controls.Add(Contents)
                     Line += 25
                 Next
@@ -159,7 +159,7 @@ Public Class Form1
                         Dim Y = Me.FluentDesignFormContainer1.Height / 2 + Line
                         Contents.Font = LabelFont
                         Contents.Location = New Point(X, Y)
-                        Contents.Text = Child.FirstChild.InnerText
+                        Contents.Text = Child.Name & ": " & Child.FirstChild.InnerText
                         Me.FluentDesignFormContainer1.Controls.Add(Contents)
                         Line += 25
                     End If
